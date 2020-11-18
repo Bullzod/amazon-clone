@@ -1,0 +1,76 @@
+.navbar__logo {
+  width: 100px;
+  margin: 12px 15px 5px;
+  object-fit: contain;
+}
+
+.navbar {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar__link {
+  color: azure;
+  text-decoration: none;
+  font-family: Segoe UI;
+}
+
+.navbar__option {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 0 0;
+}
+
+.navbar__nav {
+  margin-left: 15px;
+}
+
+.navbar__option > .lineOne {
+  font-size: 11px;
+}
+
+.navbar__option > .lineTwo {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.navbar__search {
+  display: flex;
+  flex: 1;
+}
+
+.navbar__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.navbar__searchIcon {
+  background-color: #FF9900;
+  padding: 5px;
+  height: 22px !important;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.navbar__basket {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__basket > span{
+  margin: 0 10px 0;
+  font-weight: 600;
+}

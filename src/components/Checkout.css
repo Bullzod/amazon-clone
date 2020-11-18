@@ -1,0 +1,22 @@
+.checkout {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.checkout__left {
+  max-width: 60%;
+}
+
+.checkout__right {
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.checkout__products {
+  margin-top: 10px;
+}
+
+.checkout__products > .checkout__title {
+  margin-bottom: 10px;
+}
