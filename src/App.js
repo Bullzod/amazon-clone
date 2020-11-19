@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import React from 'react';
 import Checkout from './components/Checkout';
+import Login from './components/Login';
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
             <Checkout />
           </Route>
           <Route path="/login">
-            <h1>Login Page</h1>
+            <Login />
           </Route>
           <Route path="/">
             <Navbar />

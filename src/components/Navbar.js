@@ -27,7 +27,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Link className="navbar__link">
+        {/* <Link className="navbar__link">
           <div className="navbar__option">
             <span className="lineOne">Returns</span>
             <span className="lineTwo">&amp; Orders</span>
@@ -39,7 +39,7 @@ const Navbar = () => {
             <span className="lineOne">Your</span>
             <span className="lineTwo">Prime</span>
           </div>
-        </Link>
+        </Link> */}
 
         <Link to="/checkout" className="navbar__link">
           <div className="navbar__basket">
