@@ -4,9 +4,16 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from '../StateProvider';
+import { auth } from '../firebase';
 
 const Navbar = () => {
-  const [{basket}] = useStateValue();
+  const [{basket, user}, dispatch]= useStateValue();
+
+  const handleAuthentication = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
 
   return(
     <div className="navbar">
@@ -20,10 +27,10 @@ const Navbar = () => {
       </div>
 
       <div className="navbar__nav">
-        <Link to="/login" className="navbar__link">
+        <Link to={!user && "/login"} className="navbar__link">
           <div className="navbar__option">
-            <span className="lineOne">Hello Akhil</span>
-            <span className="lineTwo">Sign In</span>
+            <span className="lineOne">{user? `Hello ${user.email}` : `Hello Guest`}</span>
+            <span className="lineTwo" onClick={handleAuthentication}>{user? 'Sign Out' : 'Sign In'}</span>
           </div>
         </Link>
 
